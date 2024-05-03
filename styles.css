@@ -1,0 +1,102 @@
+*{
+    --primary-color: hsl(120, 90%, 80%);
+    --secundary-color: hsl(1, 90%, 80%);
+    --tird-color: hsl(240, 90%, 70%);
+    --light-color: hsl(120, 30%, 98%);
+    --dark-color: hsl(120, 30%, 3%);
+    --disable: hsl(120, 5%, 70%);
+    box-sizing: content-box;
+    font-family: Lato;
+    margin: 0;
+}
+
+body {
+    background-color: var(--disable);
+}
+
+.roundBorder{
+    border-radius: 5px;
+}
+
+.list{
+    background-color: var(--light-color);
+    margin: 10px auto;
+    max-width: 350px;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.date{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    /*border: 1px blue solid;*/
+}
+
+#dateText{
+    font-size: 30px;
+    /*border: 1px red solid;*/
+}
+.dateLeft{
+    /*border: 1px rgb(252, 12, 244) solid;*/
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+}
+
+#dateNumber {
+    /*border: 1px green solid;*/
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#dateMonth, #dateYear{
+    font-weight: 400;
+    margin-left: 15px;
+
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+#taskText{
+    border-color: var(--disable);
+    border-style: solid;
+    color: var(--dark-color);
+    padding: 10px;
+}
+
+
+.addTaskButton, 
+.orderButton {
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: var(--tird-color);
+    color: var(--light-color);
+}
+
+
+.task{
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: var(--dark-color);
+}
+
+.done {
+    background-color: var(--disable);
+    text-decoration: line-through;
+    color: var(--light-color);
+}

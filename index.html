@@ -9,24 +9,30 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet"
         />
         <link rel="stylesheet" href="styles.css">
-        <script scr="script.js" type="text/javascript" defer></script>
+        <script src="script.js" type="text/javascript" defer></script>
     </head>
     <body>
-        <div class="list roundBourder">
+        <div class="list roundBorder">
             <div class="date">
-                <div class="dateRight">
-                    <div id="dateNumber"></div>
+                <div id="dateText">d</div>
+                <div class="dateLeft">
+                    <div id="dateNumber">n</div>
                     <div>
-                        <div id="dateMonth"></div>
-                        <div id="dateYear"></div>
+                        <div id="dateMonth">m</div>
+                        <div id="dateYear">y</div>
                     </div>
                 </div>
-                <div class="dateText"></div>
             </div>
             <form onsubmit="addNewTask(event)">
-                <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBourder">
-            
+                <input type="text" name="taskText" id="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+                <button type="submit" class="addTaskButton">Agregar</button>
+                <button type="button" class="orderButton roundBorder" onclick="renderOlderedTasks()">Ordenar</button>
             </form>
+            <div id="tasksContainer"></div>
+            <!--
+                <button id="changeColor" class="yo tu">Change color</button>
+            -->
+        
 
 
         </div>
